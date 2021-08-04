@@ -21,6 +21,7 @@ import { BrushComponent } from './brush/brush.component';
 import { CoffeeComponent } from './coffee/coffee.component';
 import { WisdomComponent } from './wisdom/wisdom.component';
 import { SmileComponent } from './smile/smile.component';
+import { SmokingComponent } from './smoking/smoking.component';
 
 @NgModule({
   declarations: [
@@ -41,6 +42,7 @@ import { SmileComponent } from './smile/smile.component';
     CoffeeComponent,
     WisdomComponent,
     SmileComponent,
+    SmokingComponent,
   ],
   imports: [
     BrowserModule,

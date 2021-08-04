@@ -125,3 +125,34 @@ input, textarea{
 .deep-orange:hover{
  text-decoration: underline;
 }
+.text-sub-heading-des{
+  font-family: 'Rouge Script', cursive;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+}
+.text-deep{
+  font-family : Lora, Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color:black;
+}
+.text-dot{
+  color : white
+}
+.text-sub-smile{
+  font-family : Lora, Georgia, "Times New Roman", serif;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 50px;
+  color:whitesmoke;
+}
+.main-heading{
+  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 74px;
+  line-height: 96px;
+  color : #fff !important;
+  font-weight: 800;
+}

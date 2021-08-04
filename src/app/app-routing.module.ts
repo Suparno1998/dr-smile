@@ -13,6 +13,7 @@ import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
 import { NotificationsComponent } from './notifications/notifications.component';
 import { SmileComponent } from './smile/smile.component';
+import { SmokingComponent } from './smoking/smoking.component';
 import { WisdomComponent } from './wisdom/wisdom.component';
 
 
@@ -26,6 +27,7 @@ const routes: Routes = [
   {path : "breath",component : BreathComponent},
   {path : "diet",component : DietComponent},
   {path : "children",component : ChildrenComponent},
+  {path : "smoking",component : SmokingComponent},
   {path : "brush",component : BrushComponent},
   {path : "coffee",component : CoffeeComponent},
   {path : "wisdom",component : WisdomComponent},
