@@ -1,5 +1,5 @@
-import { Component, enableProdMode } from '@angular/core';
-enableProdMode()
+import { Component} from '@angular/core';
+declare var $ : any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
@@ -7,5 +7,16 @@ enableProdMode()
 })
 export class AppComponent {
   title = 'dr-smile';
-  
+  openMember(){
+    $('#appmembershipModal').modal('show')
+  }
+  openOffer(){
+    $('#appofferModal').modal('show')
+  }
+  closeMember(){
+    $('#appmembershipModal').modal('hide')
+  }
+  closeOffer(){
+    $('#appofferModal').modal('hide')
+  }
 }

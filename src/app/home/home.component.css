@@ -2,7 +2,12 @@
   .after {
     margin: 0;
   }
-
+  .style-header{
+    background-image: url('../../assets/images/mng.jpg');
+    background-size: cover;              
+    background-repeat: no-repeat;
+    background-position: top;
+  }
   .before figcaption,
   .after figcaption {
     border-radius: 12px;
@@ -126,7 +131,7 @@ input, textarea{
  text-decoration: underline;
 }
 .text-sub-heading-des{
-  font-family: 'Rouge Script', cursive;
+  font-family: 'Merienda', cursive;
   font-weight: 700;
   font-size: 50px;
   line-height: 50px;
@@ -155,4 +160,42 @@ input, textarea{
   line-height: 96px;
   color : #fff !important;
   font-weight: 800;
+}
+.text-sub-heading-main{
+  font-family: 'Rye', cursive;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+}
+.image-holder{
+  max-height: 300px;
+}
+@media screen and (max-width : 480px){
+  .main-heading{
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    color : #fff !important;
+    word-wrap: break-word;
+    font-weight: 800;
+  }
+  .text-sub-heading-main{
+    font-family: 'Rye', cursive;
+    word-wrap: break-word;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+  }
+  .text-sub-heading-des{
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+  }
+  .hyphen{
+    display: none;
+  }
 }

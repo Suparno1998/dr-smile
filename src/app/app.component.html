@@ -1,5 +1,10 @@
 <section class="menu menu2 cid-sCaOWR0CfJ" once="menu" id="menu2-0">
-    <div class="row d-flex justify-content-end bg-light top-bar p-0 m-0">
+    <div class="row d-flex justify-content-center bg-orange top-bar p-0 m-0">
+        <div class="col-auto d-flex align-items-center p-0">
+            <span class="mobile-hide text-light">Click to view our latest</span>&nbsp;<span><a data-toggle="modal" data-target="#membershipModal" class="underline">Memberships</a>&nbsp;<span class="text-light">and</span>&nbsp;<a data-toggle="modal" data-target="#offerModal" class="underline">Offers</a></span>
+        </div>
+    </div>
+    <div class="row d-flex justify-content-end bg-light top-middle-bar p-0 m-0">
         <div class="col-auto d-flex align-items-center p-0">
             <a class="btn btn-small display-4 mr-0 small-button" href="javascript:void( window.open( 'https://form.jotform.com/211982448397469', 'blank', 'scrollbars=yes, toolbar=no, width=700, height=500' ) ) ">Request Appointment</a>
         </div>
@@ -50,14 +55,14 @@
                     <strong>Addresses</strong>
                 </h5>
                 <a href="https://goo.gl/maps/AKUdDeyeB3Gkqb1WA" target="_blank">
-                    <p class="mbr-text mbr-fonts-style display-7" style="color: #f66840;">
+                    <p class="mbr-text mbr-fonts-style display-7 hv-und">
                         AA 10/6, Shastri Bagan <br> 
                         Desh Bandhu Nagar, Baguiati <br>
                         Kolkata, West Bengal 700059
                     </p>
                 </a> <br>
                 <a href="https://g.page/drsmileclinic?share" target="_blank">
-                    <p class="mbr-text mbr-fonts-style display-7" style="color: #f66840;">
+                    <p class="mbr-text mbr-fonts-style display-7 hv-und">
                         Dash Drone, Newtown, <br> 
                         Kolkata, West Bengal 700136
                     </p>
@@ -100,8 +105,8 @@
             <div class="col-md-6">
                 <div class="social-list align-left">
                     <div class="soc-item">
-                        <a href="https://twitter.com" target="_blank">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-twitter socicon" style="font-size: 30px; color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
+                        <a href="https://instagram.com" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon" style="font-size: 30px; color: rgb(255, 255, 255); fill: rgb(255, 255, 255);"></span>
                         </a>
                     </div>
                     <div class="soc-item">
@@ -115,8 +120,8 @@
                         </a>
                     </div>
                     <div class="soc-item">
-                        <a href="https://instagram.com" target="_blank">
-                            <span class="mbr-iconfont mbr-iconfont-social socicon-instagram socicon" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255); font-size: 30px;"></span>
+                        <a href="https://linkedin.com" target="_blank">
+                            <span class="mbr-iconfont mbr-iconfont-social socicon-linkedin socicon" style="color: rgb(255, 255, 255); fill: rgb(255, 255, 255); font-size: 30px;"></span>
                         </a>
                     </div>
                     
@@ -143,3 +148,55 @@
 <input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#000000' data-cookie-colorBg='rgba(182, 242, 251, 0.62)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#000000' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
 <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
 <input name="animation" type="hidden">
+<!--Membership modal start-->
+<div class="modal fade" id="appmembershipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Membership Plans</h5>
+          <button type="button" class="close" (click)="closeMember()" aria-label="Close">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="row p-0">
+                <img src="../../assets/images/membership.JPG" alt="" class="image image-responsive" style="visibility: visible;">
+            </div>
+            <div class="row d-flex justify-content-center">
+                <a class="btn btn-danger display-4 button-style" href="https://forms.gle/hDPpK1TQK9jSnk7B6" target="_blank">Register Now</a>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!--Membership modal end-->
+
+<!--Offer modal start-->
+<div class="modal fade" id="appofferModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+          <h5 class="modal-title" id="exampleModalLabel">Amazing Offers</h5>
+          <button type="button" class="close" (click)="closeOffer()">
+            <span aria-hidden="true">&times;</span>
+          </button>
+        </div>
+        <div class="modal-body">
+            <div class="modal-body">
+                <div class="row p-0 d-flex justify-content-around">
+                    <div class="col-12 col-md-3 col-lg-4 my-1 image-holder">
+                        <img src="../../assets/images/offer-1.JPG" alt="" class="image image-responsive" style="visibility: visible;">
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4 my-1 image-holder">
+                        <img src="../../assets/images/offer-2.JPG" alt="" class="image image-responsive" style="visibility: visible;">
+                    </div>
+                    <div class="col-12 col-md-3 col-lg-4 my-1 image-holder">
+                        <img src="../../assets/images/offer-3.JPG" alt="" class="image image-responsive" style="visibility: visible;">
+                    </div>
+                </div>
+            </div>
+        </div>
+      </div>
+    </div>
+</div>
+<!--Offer modal end-->

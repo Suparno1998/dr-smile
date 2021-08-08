@@ -30,6 +30,12 @@ p{
     line-height: 34px;
     color: rgba(0,0,0,0.7);
 }
+.deep-orange{
+    color : #f66840 !important;
+}
+.deep-orange:hover{
+    text-decoration: underline;
+}
 @media screen and (max-width: 768px) {
     #content6-1{
       margin-top: 50px;

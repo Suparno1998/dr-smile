@@ -22,6 +22,17 @@ import { CoffeeComponent } from './coffee/coffee.component';
 import { WisdomComponent } from './wisdom/wisdom.component';
 import { SmileComponent } from './smile/smile.component';
 import { SmokingComponent } from './smoking/smoking.component';
+import { DenturesComponent } from './dentures/dentures.component';
+import { RctComponent } from './rct/rct.component';
+import { ScalingComponent } from './scaling/scaling.component';
+import { ExtractionComponent } from './extraction/extraction.component';
+import { CrownComponent } from './crown/crown.component';
+import { FillingComponent } from './filling/filling.component';
+import { ImplantComponent } from './implant/implant.component';
+import { OrthoComponent } from './ortho/ortho.component';
+import { CosmoComponent } from './cosmo/cosmo.component';
+import { PeadoComponent } from './peado/peado.component';
+import { TeamComponent } from './team/team.component';
 
 @NgModule({
   declarations: [
@@ -43,6 +54,17 @@ import { SmokingComponent } from './smoking/smoking.component';
     WisdomComponent,
     SmileComponent,
     SmokingComponent,
+    DenturesComponent,
+    RctComponent,
+    ScalingComponent,
+    ExtractionComponent,
+    CrownComponent,
+    FillingComponent,
+    ImplantComponent,
+    OrthoComponent,
+    CosmoComponent,
+    PeadoComponent,
+    TeamComponent,
   ],
   imports: [
     BrowserModule,

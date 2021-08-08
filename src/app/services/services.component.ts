@@ -11,16 +11,7 @@ export class ServicesComponent implements OnInit {
   slider  : any
   divisor : any
   constructor(private service : DataService){ }
-  async ngOnInit(){
-    //console.log(this.service.listOfServices.length)
-    if(this.service.listOfServices.length > 0){
-      this.services = this.service.listOfServices
-      console.log('data present')
-    }
-    else{
-      this.services = await this.service.getData()
-      console.log('data api called')
-    }
+  ngOnInit(){
   }
   
 }

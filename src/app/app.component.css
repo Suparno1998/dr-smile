@@ -8,10 +8,18 @@
     left:0;
     height: 40px;
     min-width: 100%;
+    background-color : #f66840 !important;
+}
+.top-middle-bar{
+    position: fixed;
+    top:40px;
+    left:0;
+    height: 40px;
+    min-width: 100%;
     background-color: #e3eeef !important;
 }
 .navbar-fixed-top{
-    margin-top: 40px;
+    margin-top: 80px;
 }
 .text-phone{
     font-size: 16px;
@@ -60,8 +68,24 @@
 .deep-orange-link:hover{
     text-decoration: underline !important;
 }
-@media screen and (max-width: 768px) {
+.underline{
+    color : #fff;
+}
+.underline:hover{
+    text-decoration: underline;
+}
+.image-holder{
+    max-height: 300px;
+    
+}
+.hv-und:hover{
+    text-decoration: underline;
+}
+@media screen and (max-width: 480px) {
     .small-button{
       visibility: visible;
+    }
+    .mobile-hide{
+        display: none;
     }
 }

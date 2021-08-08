@@ -23,18 +23,18 @@ export class HomeComponent implements OnInit {
   async ngOnInit(){
     this.divisor = document.getElementById("divisor")
     this.slider = document.getElementById("slider");
-    await this.service.getNews();
-    this.service.latestFlag.subscribe(v => {
-      this.latest = v
-    })
   }
-  openModal(){
-    console.log('test')
+  openMember(){
     $('#membershipModal').modal('show')
   }
-  offerModal(){
-    console.log('test')
+  openOffer(){
     $('#offerModal').modal('show')
+  }
+  closeMember(){
+    $('#membershipModal').modal('hide')
+  }
+  closeOffer(){
+    $('#offerModal').modal('hide')
   }
   moveDivisor() { 
     this.divisor.style.width = this.slider.value+"%";

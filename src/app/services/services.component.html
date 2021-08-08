@@ -3,58 +3,310 @@
         <div class="row justify-content-center">
             <div class="col-12 col-md-11">
                 <div class="mbr-section-head align-center mb-4">
-                    <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2 text-heading"><strong>Our Services</strong></h3>
-                    
+                    <h3 class="mbr-section-title mb-0 mbr-fonts-style display-2 text-choose-heading"><strong>Our Services</strong></h3>  
                 </div>
                 <div id="bootstrap-accordion_14" class="panel-group accordionStyles accordion" role="tablist" aria-multiselectable="true">
-                    <div class="card mb-3" *ngFor="let service of services;let i = index;">
+                    <div class="card mb-3">
                         <div class="card-header" role="tab" id="headingOne">
-                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" [href]="'#collapse14_'+i" aria-expanded="false" aria-controls="collapse1">
-                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 text-sub-heading">{{service.name}}
-                                </h6>
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_0" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Restoration/Filling</h6>
                                 <span class="sign mbr-iconfont mbri-arrow-down"></span>
                             </a>
                         </div>
-                        <div [id]="'collapse14_'+i"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                        <div id="collapse14_0"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
                             <div class="panel-body">
                                 <div class="container-fluid p-0">
                                     <div class="row align-items-center">
                                         <div class="col-12 col-lg">
                                             <div class="text-wrapper">
-                                                <p class="mbr-text mbr-fonts-style display-7 text-normal">
-                                                    {{service.description}}
+                                                <p>
+                                                    “Restorative dentistry” is the term dental professionals use to explain how they replace missing or damaged teeth. Fillings, crowns (“caps”), bridges and implants are common restorative options. The goal is to bring back your natural smile and prevent future oral health issues.
                                                 </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="container-fluid p-0">
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-12 col-lg-12">
-                                                    <h3 class="mbr-section-title mbr-fonts-style mb-4 display-5 text-sub-heading">
-                                                       Steps to perform the procedure
-                                                    </h3>
-                                                <ol class="list mbr-fonts-style display-7 text-normal">
-                                                    <li *ngFor="let step of service.steps">
-                                                       {{step.step}}
-                                                    </li>
-                                                </ol>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/filling" fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_7" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Root Canal Treatment(RCT)</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_7"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                <p>
+                                                    Root canal treatment(RCT) is a dental procedure for the infected pulp of a tooth which is intended to result in the elimination of infection and protection of the remaining sound tooth structure from future microbial invasion. When decay gets into the softcore, the pulp can become inflamed or infected, or even necrotic (dead). A root canal is needed to clean out the decay.
+                                                </p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="container-fluid p-0">
-                                        <div class="row justify-content-center">
-                                            <div class="col-md-12 col-lg-12">
-                                                    <h3 class="mbr-section-title mbr-fonts-style mb-4 text-sub-heading">
-                                                        <strong>Frequently asked questions</strong>
-                                                    </h3>
-                                                <ul class="list mbr-fonts-style text-normal">
-                                                    <li *ngFor="let question of service.faq">
-                                                        <strong>{{question.question}}</strong>
-                                                        <br>
-                                                        <em>{{question.answer}}</em>
-                                                    </li>
-                                                </ul>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/rct" fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_5" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Scaling/Cleaning</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_5"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                <p>
+                                                    Scaling and root planing (deep cleaning) is a procedure involving the removal of dental plaque and calculus and then smoothing of the (exposed) surfaces of the enamel and roots.
+                                                </p>
                                             </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/scaling" fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_3" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Extraction</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_3"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                
+                                                <p>Dental extraction is the painless removal of teeth from the socket in the alveolar bone.</p>
+                                                <p class="heading-sub">
+                                                    When do you need extraction?
+                                                </p>
+                                                <p>
+                                                    Your dentist will plan for an extraction only when there is absolutely no other possible way out to save the tooth in general cases while sometimes it might be necessary due to various other reasons like mal position of the tooth, cosmetic dental treatments, orthodontic treatment etc.
+                                                </p>
+                                                
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/extraction" fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_4" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Dentures</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_4"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                <p class="heading-sub">
+                                                    What is a denture?
+                                                </p>
+                                                <p>
+                                                    People wear dentures to replace lost or missing teeth so they can enjoy a healthy diet and smile with confidence. Dentures are made of either acrylic (plastic) or metal. <br>
+                                                    A ‘complete’ or ‘full’ denture is one which replaces all the natural teeth in either the upper or lower jaw. <br>
+                                                    A ‘partial’ denture fills in the spaces left by lost or missing teeth. It may be fastened to your natural teeth with metal clasps or ‘precision attachments’. <br>
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/dentures" fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_cr" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Crown and Bridge</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_cr"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                <p>
+                                                    Crowns and bridges are a fixed solution to missing or damaged teeth. This restorative procedure uses prosthetic devices to return your smile to its natural state. A crown is used when the tooth structure is damaged or fractured. A bridge is used when one or more teeth are missing.
+
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/crown" fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_1" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Implant Dentistry</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_1"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                <p>
+                                                    A dental implant is a screw like component that interfaces with the bone of the jaw to support a crown, bridge or denture etc.
+                                                </p>
+                                                <p class="heading-sub">
+                                                        What are dental implants?
+                                                </p>
+                                                <p>
+                                                        Dental Implants Procedure Shows Implant screw and Dental Crown Tooth.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/implant"fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_8" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Orthodontic Treatment</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_8"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                <p>
+                                                    Orthodontic treatment is a way of straightening or moving teeth, to improve the appearance of the teeth and how they work.
+                                                </p>
+                                                <p class="heading-sub">When do you need orthodontic treatment?</p>
+                                                <p>
+                                                    Your dentist might recommend it if you have crowded or crooked teeth. Orthodontic treatment will straighten the teeth or move them into a better position. This can improve their appearance and the way the teeth bite together, while also making them easier to clean. Some people have upper front teeth that stick out and look unsightly. These 'prominent' teeth are more likely to be damaged, but orthodontic treatment can move them back into line. When the teeth don't meet correctly, this can strain the jaw muscles, causing jaw and joint problems and sometimes headaches. Orthodontic treatment can help you.
+                                                </p>
+                                               
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/ortho" fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_10" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Cosmentic Dentistry</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_10"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                <p>
+                                                It happens to all of us as we age — our teeth become stained, worn, discolored, misaligned, and even chipped or broken. But there’s something that can help: cosmetic dentistry. <br>
+
+                                                    Cosmetic dentistry isn’t just something that’s “nice to have” because it makes your smile look better. Misaligned, crooked, and chipped teeth can have a huge impact on your oral health, your speech, how you eat, bite, and more.  <br>
+                                                    
+                                                    We’ll review some of the most common cosmetic dentistry treatments, including the benefits and what you can expect from treatment, to help you determine if cosmetic dentistry is the right option for you. Let’s get started.  <br>
+                                                </p> 
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/cosmo" fragment="head" >Learn More</a>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="card mb-3">
+                        <div class="card-header" role="tab" id="headingOne">
+                            <a role="button" class="panel-title collapsed" data-toggle="collapse" data-core="" href="#collapse14_9" aria-expanded="false" aria-controls="collapse1">
+                                <h6 class="panel-title-edit mbr-fonts-style mb-0 display-7 choose-sub-heading">Pediatric Dentistry</h6>
+                                <span class="sign mbr-iconfont mbri-arrow-down"></span>
+                            </a>
+                        </div>
+                        <div id="collapse14_9"  class="panel-collapse noScroll collapse" role="tabpanel" aria-labelledby="headingOne" data-parent="#bootstrap-accordion_14">
+                            <div class="panel-body">
+                                <div class="container-fluid p-0">
+                                    <div class="row align-items-center">
+                                        <div class="col-12 col-lg">
+                                            <div class="text-wrapper">
+                                                <p>
+                                                    One of the most important components of pediatric dentistry is child psychology.  Pediatric dentists are trained to create a friendly, fun, social atmosphere for visiting children, and always avoid threatening words like “drill,” “needle,” and “injection.”  Dental phobias beginning in childhood often continue into adulthood, so it is of paramount importance that children have positive experiences and find their “dental home” as early as possible.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                    <div class="row justify-content-center">
+                                        <div class="col-auto">
+                                            <a class="btn btn-danger display-4 button-style" routerLink="/peado" fragment="head" >Learn More</a>
                                         </div>
                                     </div>
                                 </div>

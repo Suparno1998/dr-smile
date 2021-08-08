@@ -1,0 +1,65 @@
+.heading-main{
+    font-family:Poppins, Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 500;
+    font-size: 40px;
+    line-height: 50px;
+    color: rgba(0,0,0,0.82);
+}
+.heading-sub{
+    font-family:Poppins, Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: rgba(0,0,0,0.82);
+}
+.text-main{
+    font-family:Lora, Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 34px;
+    color: rgba(0,0,0,0.7);
+}
+p{
+    font-family:Lora, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    color: rgba(0,0,0,0.7);
+}
+.text-point{
+    font-family:Lora, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    color: rgba(0,0,0,0.7) !important;
+}
+.cid-sEwlHHluPT{
+    margin-top: 120px;
+}
+.card{
+    border: 1px solid rgba(0,0,0,.125);
+    background-color: whitesmoke;
+}
+.pc-hide{
+    display: none;
+ }
+ .mobile-hide{
+    display: block;
+ }
+@media screen and (max-width: 768px) {
+    #content6-1{
+      margin-top: 50px;
+    }
+    .heading-main{
+        font-size: 30px;
+        line-height: 50px;
+    }
+}
+@media screen and (max-width: 480px) {
+    .pc-hide{
+       display: block;
+    }
+    .mobile-hide{
+        display: none;
+    }
+}

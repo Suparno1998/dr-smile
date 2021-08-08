@@ -29,7 +29,7 @@ const app = flamelink({
   locale: 'en-US', // optional, defaults to `en-US`
   dbType: 'cf' // optional, defaults to `rtdb` - can be 'rtdb' or 'cf' (Realtime DB vs Cloud Firestore)
 })
-
+declare var $ : any
 @Injectable({
   providedIn: 'root'
 })
