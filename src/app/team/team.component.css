@@ -40,12 +40,6 @@ p{
     border: 1px solid rgba(0,0,0,.125);
     background-color: whitesmoke;
 }
-.pc-hide{
-    display: none;
- }
- .mobile-hide{
-    display: block;
- }
 @media screen and (max-width: 768px) {
     #content6-1{
       margin-top: 50px;
@@ -56,10 +50,4 @@ p{
     }
 }
 @media screen and (max-width: 480px) {
-    .pc-hide{
-       display: block;
-    }
-    .mobile-hide{
-        display: none;
-    }
 }

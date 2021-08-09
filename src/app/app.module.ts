@@ -33,6 +33,7 @@ import { OrthoComponent } from './ortho/ortho.component';
 import { CosmoComponent } from './cosmo/cosmo.component';
 import { PeadoComponent } from './peado/peado.component';
 import { TeamComponent } from './team/team.component';
+import { OralComponent } from './oral/oral.component';
 
 @NgModule({
   declarations: [
@@ -65,6 +66,7 @@ import { TeamComponent } from './team/team.component';
     CosmoComponent,
     PeadoComponent,
     TeamComponent,
+    OralComponent,
   ],
   imports: [
     BrowserModule,

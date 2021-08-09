@@ -1,0 +1,201 @@
+.before,
+  .after {
+    margin: 0;
+  }
+  .style-header{
+    background-image: url('../../assets/images/mng.jpg');
+    background-size: cover;              
+    background-repeat: no-repeat;
+    background-position: top;
+  }
+  .before figcaption,
+  .after figcaption {
+    border-radius: 12px;
+    opacity: 0.5;
+    color: aliceblue;
+    opacity: 0.8;
+    padding: 12px;
+    font-weight: bold;
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+    line-height: 100%;
+  }
+  .image{
+    max-height: 650px;
+  }
+  @media screen and (max-width: 768px) {
+    .image{
+      max-height:450px;
+    }
+  }
+  .before figcaption {
+    left: 12px;
+  }
+
+  .after figcaption {
+    right: 12px;
+  }
+  .et_pb_text_4 h2 {
+    font-weight: 700;
+    font-size: 45px;
+    color: rgba(0,0,0,0.7)!important;
+    line-height: 1.3em;
+  }
+  .button-style{
+    color : #fff;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    font-size: 15px;
+    line-height: 26px;
+    border-radius: 10px;
+  }
+.text-sub-heading{
+    color : #fab440;
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    font-size: 22px;
+    line-height: 29px;
+}
+.text-normal{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 34px;
+  color : rgba(0,0,0,0.7);
+}
+.text-italic{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-style: italic;
+  font-weight: 500;
+  font-size: 17px;
+  line-height: 34px;
+  color : rgba(0,0,0,0.7);
+}
+.text-choose-heading{
+    color : rgba(0,0,0,0.82);
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    font-size: 38px;
+    line-height: 49px;
+}
+.choose-sub-heading{
+    color : rgba(0,0,0,0.7);
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 26px;
+}
+.text-link{
+  text-decoration: underline;
+}
+.text-link:hover{
+  color : rgba(0,0,0,0.3);
+}
+.choose-text-normal{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  color : rgba(0,0,0,0.7);
+}
+.smile-heading{
+    color : rgba(0,0,0,0.7);
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-weight: 700;
+    font-size: 36px;
+    line-height: 47px;
+}
+
+input, textarea{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  color : rgba(0,0,0,0.7);
+}
+.text-point{
+  font-family:Lora, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  color: rgba(0,0,0,0.7) !important;
+}
+.iconfont-wrapper{
+  font-size: 5rem;
+}
+.deep-orange{
+  color : #f66840;
+}
+.deep-orange:hover{
+ text-decoration: underline;
+}
+.text-sub-heading-des{
+  font-family: 'Merienda', cursive;
+  font-weight: 700;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+}
+.text-deep{
+  font-family : Lora, Georgia, "Times New Roman", serif;
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 50px;
+  color:black;
+}
+.text-dot{
+  color : white
+}
+.text-sub-smile{
+  font-family : Lora, Georgia, "Times New Roman", serif;
+  font-weight: 200;
+  font-size: 30px;
+  line-height: 50px;
+  color:whitesmoke;
+}
+.main-heading{
+  font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+  font-size: 74px;
+  line-height: 96px;
+  color : #fff !important;
+  font-weight: 800;
+}
+.text-sub-heading-main{
+  font-family: 'Rye', cursive;
+  font-weight: 500;
+  font-size: 50px;
+  line-height: 50px;
+  color: white;
+}
+.image-holder{
+  max-height: 300px;
+}
+@media screen and (max-width : 480px){
+  .main-heading{
+    font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
+    font-size: 50px;
+    line-height: 60px;
+    color : #fff !important;
+    word-wrap: break-word;
+    font-weight: 800;
+  }
+  .text-sub-heading-main{
+    font-family: 'Rye', cursive;
+    word-wrap: break-word;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+  }
+  .text-sub-heading-des{
+    font-family: 'Merienda', cursive;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 50px;
+    color: white;
+  }
+  .hyphen{
+    display: none;
+  }
+}
