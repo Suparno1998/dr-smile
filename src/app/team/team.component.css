@@ -40,6 +40,26 @@ p{
     border: 1px solid rgba(0,0,0,.125);
     background-color: whitesmoke;
 }
+.gap{
+    font-size: 14px;
+    font-weight: 500;
+    line-height: 20px;
+    color : black;
+}
+.pc-hide{
+    padding: 0.75rem;
+}
+.card-body{
+    margin-top: 10px;
+    padding: 0.5rem;
+}
+p{
+    font-family: Lora, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 15px !important;
+    line-height: 25px !important;
+    color: rgba(0,0,0,0.7);
+}
 @media screen and (max-width: 768px) {
     #content6-1{
       margin-top: 50px;
