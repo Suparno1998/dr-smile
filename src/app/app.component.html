@@ -170,7 +170,7 @@
     <div class="modal-dialog">
       <div class="modal-content">
         <div class="modal-header">
-          <h5 class="modal-title" id="exampleModalLabel">Membership Plans</h5>
+          <h5 class="modal-title" id="exampleModalLabel">Membership Plan</h5>
           <button type="button" class="close" (click)="closeMember()" aria-label="Close">
             <span aria-hidden="true">&times;</span>
           </button>
@@ -180,7 +180,7 @@
                 <img src="../../assets/images/membership.JPG" alt="" class="image image-responsive" style="visibility: visible;">
             </div>
             <div class="row d-flex justify-content-center">
-                <a class="btn btn-danger display-4 button-style" href="https://forms.gle/hDPpK1TQK9jSnk7B6">Register Now</a>
+                <a class="btn btn-danger display-4 button-style" (click)="openMemberForm()">Register Now</a>
             </div>
         </div>
       </div>
@@ -212,7 +212,7 @@
                     </div>
                 </div>
                 <div class="row d-flex justify-content-center">
-                    <a class="btn btn-danger display-4 button-style" href="https://forms.gle/9C1y7tQ9QoKfbxSW7">Avail Now</a>
+                    <a class="btn btn-danger display-4 button-style" (click)="openOfferForm()">Avail Now</a>
                 </div>
             </div>
         </div>
