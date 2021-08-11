@@ -25,12 +25,9 @@ export class AppComponent {
     //or document.querySelector('body').scrollTo(0,0)
   }
   openOfferForm(){
-    console.log("offer");
-    window.location.href = "https://forms.gle/hDPpK1TQK9jSnk7B6"
+    window.location.href = "https://form.jotform.com/212220564002033"
   }
   openMemberForm(){
-    console.log("member");
-    
     window.location.href="https://form.jotform.com/212216404476046"
   }
 }
