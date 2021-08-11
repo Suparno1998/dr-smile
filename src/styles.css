@@ -25,3 +25,37 @@ html,body {
    height: 50px;
    background-color: aliceblue;
 }
+.small-img{
+   height: 300px;
+   width: 400px;
+}
+.small-img-crown{
+   height: 340px;
+   width: 400px;
+}
+.small-img-cosmo{
+   height: 340px;
+   width: 400px;
+}
+.small-img-pedo{
+   height: 340px;
+   width: 400px;
+}
+@media only screen and (max-width: 480px){
+   .small-img{
+      max-height: 200px;
+      max-width: 300px;
+   }
+   .small-img-crown{
+      height: 200px;
+      width: 300px;
+   }
+   .small-img-cosmo{
+      height: 250px;
+      width: 300px;
+   }
+   .small-img-pedo{
+      height: 350px;
+      width: 300px;
+   }
+}
