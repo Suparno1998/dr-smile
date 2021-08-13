@@ -99,6 +99,13 @@
   line-height: 34px;
   color : rgba(0,0,0,0.7);
 }
+.choose-text-normal-small{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 17px;
+  line-height: 34px;
+  color : rgba(0,0,0,0.7);
+}
 .smile-heading{
     color : rgba(0,0,0,0.7);
     font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;
@@ -179,6 +186,13 @@ input, textarea{
     color : #fff !important;
     word-wrap: break-word;
     font-weight: 800;
+  }
+  .choose-text-normal-small{
+    font-family: Lora, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 14px;
+    line-height: 20px;
+    color : rgba(0,0,0,0.7);
   }
   .text-sub-heading-main{
     font-family: 'Rye', cursive;

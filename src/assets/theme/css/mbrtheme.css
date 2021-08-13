@@ -1517,3 +1517,49 @@ a {
 .cid-sDpCKlrKiV .mbr-text {
   color: #ffffff;
 }
+.cid-sFXjfX9SKk {
+  padding-top: 6rem;
+  padding-bottom: 6rem;
+  background-color: #ffffff;
+}
+.cid-sFXjfX9SKk .carousel-item {
+  justify-content: center;
+}
+.cid-sFXjfX9SKk .carousel-item.active,
+.cid-sFXjfX9SKk .carousel-item-next,
+.cid-sFXjfX9SKk .carousel-item-prev {
+  display: flex;
+}
+.cid-sFXjfX9SKk .carousel-controls a {
+  transition: opacity .5s;
+  font-size: 30px;
+  position: absolute;
+  top: 180px;
+  bottom: auto;
+  height: 60px;
+  width: 60px;
+  padding: 10px;
+  color: #155ce0;
+}
+.cid-sFXjfX9SKk .carousel-controls a .mbr-iconfont {
+  font-weight: 800;
+}
+.cid-sFXjfX9SKk .carousel-control-next span {
+  padding-left: 5px;
+}
+.cid-sFXjfX9SKk .carousel-control-prev span {
+  padding-right: 5px;
+}
+.cid-sFXjfX9SKk .user_image {
+  width: 200px;
+  height: 200px;
+  margin-bottom: 1.6rem;
+  overflow: hidden;
+  border-radius: 50%;
+  margin: 0 auto 2rem auto;
+}
+.cid-sFXjfX9SKk .user_image img {
+  width: 100%;
+  min-width: 100%;
+  min-height: 100%;
+}
