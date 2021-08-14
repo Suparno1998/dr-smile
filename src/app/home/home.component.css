@@ -178,6 +178,29 @@ input, textarea{
 .image-holder{
   max-height: 300px;
 }
+.deep-orange-light{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color : #f66840;
+  cursor: pointer;
+}
+.deep-orange-light:hover{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 14px;
+  color : #f66840;
+  cursor: pointer;
+  text-decoration: none;
+}
+.form-control-text{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color : black;
+}
+
 @media screen and (max-width : 480px){
   .main-heading{
     font-family: 'Poppins',Helvetica,Arial,Lucida,sans-serif;

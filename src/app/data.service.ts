@@ -2,51 +2,44 @@ import { Injectable } from '@angular/core';
 import { HttpClient } from '@angular/common/http';
 import firebase from 'firebase/app'
 import 'firebase/firestore'
+import 'firebase/firestore'
 import 'firebase/storage'
 
-// Flamelink app is always required
-import flamelink from 'flamelink/app'
-// Add additional modules that you want to use
-import 'flamelink/content'
-import 'flamelink/storage'
 import { of, Subject } from 'rxjs';
 
 const firebaseConfig = {
-  apiKey: "AIzaSyCfm23lJ2rmUKf2hEvmGjoVVy_nUQI-Qyw",
-  authDomain: "test-proj-9cb5f.firebaseapp.com",
-  projectId: "test-proj-9cb5f",
-  storageBucket: "test-proj-9cb5f.appspot.com",
-  messagingSenderId: "633346289613",
-  appId: "1:633346289613:web:2bbe4db254406c0384de84",
-  measurementId: "G-JJE16Z0Q0K"
+  apiKey: "AIzaSyCkfqj602Vf2ED95xg2FmAWb-VMZO11e-w",
+  authDomain: "drsmileweb.firebaseapp.com",
+  projectId: "drsmileweb",
+  storageBucket: "drsmileweb.appspot.com",
+  messagingSenderId: "827046137011",
+  appId: "1:827046137011:web:c07e682a01bc202b9cf4c6",
+  measurementId: "G-YHDXK4DPTS"
 };
 
-const firebaseApp = firebase.initializeApp(firebaseConfig)
 
-const app = flamelink({
-  firebaseApp,
-  env: 'production', // optional, defaults to `production`
-  locale: 'en-US', // optional, defaults to `en-US`
-  dbType: 'cf' // optional, defaults to `rtdb` - can be 'rtdb' or 'cf' (Realtime DB vs Cloud Firestore)
-})
+
 declare var $ : any
 @Injectable({
   providedIn: 'root'
 })
 export class DataService {
-  
-  constructor(private http : HttpClient) { }
+  db : any = null
+  constructor(private http : HttpClient) {
+    firebase.initializeApp(firebaseConfig)
+    this.db = firebase.firestore()
+  }
   listOfServices : any[] = [];
   dates : Date[] = []
   news : any[] = []
   latestFlag : Subject<boolean> = new Subject<boolean>();
-  async getData(){
+  /*async getData(){
     const resp = await app.content.get({schemaKey : 'services',populate : true})
     const list = Object.values(resp)
     this.listOfServices = list
     console.log(list)
     return list
-  }
+  }*/
   convertDate(d : Date) {
     const months = ['Jan','Feb','Mar','Apr','May','Jun','Jul','Aug','Sep','Oct','Nov','Dec']
     function pad(s) { return (s < 10) ? '0' + s : s; }
@@ -57,7 +50,7 @@ export class DataService {
     const diffDays = Math.ceil(diffTime / (1000 * 60 * 60 * 24));
     return diffDays 
   }
-  async getNews(){
+  /*async getNews(){
     const notifications = await app.content.get({schemaKey : 'notification'})
     //console.log(notifications)
     this.news = Object.values(notifications)
@@ -74,8 +67,19 @@ export class DataService {
       this.latestFlag.next(false)
     }
     return this.news
-  }
+  }*/
   submitForm(data : any){
     return this.http.get("https://script.google.com/macros/s/AKfycbwBIG2-nHAnEzOM4eQCT6Vjtvz-fynP8Vmt1iPiXSQoLdhHXuRC_IFFgioq4TmyylY8/exec?"+data)
+  }
+  async submitFeedback(obj){
+    console.log(obj)
+    console.log(this.db)
+    var resp = await this.db.collection('feedback').add(obj)
+    return resp
+  }
+  async getFeedback():Promise<any[]>{
+    return this.db.collection('feedback').get().then(snap => {
+      return snap.docs.map(v => v.data())
+    })
   }
 }

@@ -1,5 +1,7 @@
 import { NgModule } from '@angular/core';
 import { Routes, RouterModule } from '@angular/router';
+import { AllReviewsComponent } from './all-reviews/all-reviews.component';
+import { AllSmilesComponent } from './all-smiles/all-smiles.component';
 import { BreathComponent } from './breath/breath.component';
 import { BrushComponent } from './brush/brush.component';
 import { CancerComponent } from './cancer/cancer.component';
@@ -17,7 +19,6 @@ import { FluorideComponent } from './fluoride/fluoride.component';
 import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
 import { ImplantComponent } from './implant/implant.component';
-import { NotificationsComponent } from './notifications/notifications.component';
 import { OrthoComponent } from './ortho/ortho.component';
 import { PeadoComponent } from './peado/peado.component';
 import { RctComponent } from './rct/rct.component';
@@ -29,10 +30,11 @@ import { WisdomComponent } from './wisdom/wisdom.component';
 
 
 const routes: Routes = [
-  {path : "form", component : FormComponent},
+  {path : "form", component : FormComponent,},
   {path : "" ,component : HomeComponent},
   {path : "team", component : TeamComponent},
-  {path : "news", component : NotificationsComponent},
+  {path : "review", component : AllReviewsComponent},
+  {path : "smiles", component : AllSmilesComponent},
   //oral cavity components
   {path : "covid", component : CovidComponent},
   {path : "fluoride",component : FluorideComponent},

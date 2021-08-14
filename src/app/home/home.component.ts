@@ -10,6 +10,10 @@ declare var $ : any;
 export class HomeComponent implements OnInit {
   divisor: any;
   slider: any;
+  rating = 0
+  feedback : string = ""
+  name : string = ""
+  date = null
   queryForm = {
     Name  : "",
     Mobile : "",
@@ -38,6 +42,12 @@ export class HomeComponent implements OnInit {
   }
   moveDivisor() { 
     this.divisor.style.width = this.slider.value+"%";
+  }
+  openFormModal(){
+    $('#feedbackformmodal').modal('show')
+  }
+  closeFormModal(){
+    $('#feedbackformmodal').modal('hide')
   }
   ValidateEmail(mail : string) 
   {
@@ -103,5 +113,50 @@ export class HomeComponent implements OnInit {
   }
   check(){
     this.cond = !this.cond
+  }
+  submitFeedbackForm(e){
+    e.preventDefault()
+    if(this.rating === 0){
+      Swal.fire({
+        title : "Field Empty",
+        text : "Please fill the rating field to submit form",
+        "showConfirmButton" : false,
+        icon : "warning",
+        showCloseButton : true,
+        showCancelButton : true,
+      })
+    }
+    else{
+      var obj = {
+        name : this.name === "" ? "Anonymous" : this.name,
+        date : this.date === null ? "NA" : this.date,
+        feedback : this.feedback == "" ? "NA" : this.feedback,
+        rating : this.rating
+      }
+      this.service.submitFeedback(obj).then(v => {
+        console.log(v.id)
+
+        if(v.id){
+          Swal.fire({
+            title : "Successful",
+            text : "Your feedback has been successfully noted, Thank you for your valuable time. Looking forward to serving you again",
+            showConfirmButton : false,
+            showCloseButton : true,
+            icon : "success",
+            showCancelButton : true,
+          })
+        }
+        else{
+          Swal.fire({
+            title : "Oops",
+            text : "Your feedback could not be submitted.Please try again later",
+            showConfirmButton : false,
+            showCloseButton : true,
+            icon : "error",
+            showCancelButton : true,
+          })
+        }
+      })
+    }
   }
 }

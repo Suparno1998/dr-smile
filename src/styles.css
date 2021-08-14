@@ -58,6 +58,9 @@ html,body {
    font-size : 4rem;
 }
 @media only screen and (max-width: 480px){
+   #content6-1{
+      margin-top: 80px !important;
+    }
    .small-img{
       max-height: 200px;
       max-width: 300px;

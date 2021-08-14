@@ -8,7 +8,6 @@ import { AppComponent } from './app.component';
 import { ServicesComponent } from './services/services.component';
 import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
-import { NotificationsComponent } from './notifications/notifications.component';
 import { CovidComponent } from './covid/covid.component';
 import { AdviceComponent } from './advice/advice.component';
 import { FluorideComponent } from './fluoride/fluoride.component';
@@ -34,6 +33,9 @@ import { CosmoComponent } from './cosmo/cosmo.component';
 import { PeadoComponent } from './peado/peado.component';
 import { TeamComponent } from './team/team.component';
 import { OralComponent } from './oral/oral.component';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
+import { AllReviewsComponent } from './all-reviews/all-reviews.component';
+import { AllSmilesComponent } from './all-smiles/all-smiles.component';
 
 @NgModule({
   declarations: [
@@ -41,7 +43,6 @@ import { OralComponent } from './oral/oral.component';
     ServicesComponent,
     FormComponent,
     HomeComponent,
-    NotificationsComponent,
     CovidComponent,
     AdviceComponent,
     FluorideComponent,
@@ -67,12 +68,15 @@ import { OralComponent } from './oral/oral.component';
     PeadoComponent,
     TeamComponent,
     OralComponent,
+    AllReviewsComponent,
+    AllSmilesComponent,
   ],
   imports: [
     BrowserModule,
     AppRoutingModule,
     HttpClientModule,
     FormsModule,
+    NgbModule,
   ],
   providers: [],
   bootstrap: [AppComponent],

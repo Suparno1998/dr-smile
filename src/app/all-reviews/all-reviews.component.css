@@ -1,0 +1,70 @@
+
+#content6-1{
+    margin-top:120px !important;
+}
+.heading-main{
+    font-family:Poppins, Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 500;
+    font-size: 30px;
+    line-height: 39px;
+    color: rgba(0,0,0,0.82);
+}
+.heading-sub{
+    font-family:Poppins, Helvetica, Arial, Lucida, sans-serif;
+    font-weight: 400;
+    font-size: 26px;
+    line-height: 34px;
+    color: rgba(0,0,0,0.82);
+}
+.text-main{
+    font-family:Lora, Georgia, "Times New Roman", serif;
+    font-weight: 500;
+    font-size: 17px;
+    line-height: 34px;
+    color: rgba(0,0,0,0.7);
+}
+p{
+    font-family:Lora, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 17px;
+    line-height: 34px;
+    color: rgba(0,0,0,0.7);
+}
+.form-control{
+  font-family: Lora, Georgia, "Times New Roman", serif;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 25px;
+  color : black;
+  max-height: 26px;
+}
+.table .thead-dark th{
+    font-family: Lora, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 25px;
+    color : white;
+  }
+  td{
+    font-family: Lora, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    color : black;
+  }
+.row-btn{
+    font-family: Lora, Georgia, "Times New Roman", serif;
+    font-weight: 400;
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 20px;
+    margin:0px;
+    height: 48px;
+}
+@media screen and (max-width: 768px) {
+    #content6-1{
+      margin-top: 80px !important;
+    }
+}

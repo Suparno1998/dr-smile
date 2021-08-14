@@ -1,0 +1,56 @@
+<div id="top"></div>
+<section class="content6 cid-sEwlHHluPT" id="content6-1">   
+    <div class="container-fluid p-0">
+        <div class="row d-flex justify-content-center mt-3 px-1">
+            <div class="col-11 heading-main" id="head">
+                All Reviews
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center mb-3">
+            <div class="col-auto my-1">
+                <select name="selct-rating" id="select-rating" class="form-control" [(ngModel)]="filter.rating" (change)="onChange()">
+                    <option value="" selected>Select Rating</option>
+                    <option [value]="i+1" *ngFor="let item of [].constructor(10);let i = index">{{i+1}}</option>
+                </select>
+            </div>
+            <div class="col-auto my-1">
+                <select name="selct-name" id="select-name" class="form-control"  [(ngModel)]="filter.name" (change)="onChange()">
+                    <option value="" selected>Select name</option>
+                    <option value="a">Anonymous</option>
+                    <option value="na">Non Anonymous</option>
+                </select>
+            </div>
+            <div class="col-auto my-1">
+                <button class="btn btn-outline-primary row-btn" (click)="clearFilter()">Clear filter</button>
+            </div>
+        </div>
+        <div class="row d-flex justify-content-center px-1">
+            <div class="col-11 text-body">
+                <table class="table table-striped">
+                    <thead class="thead-dark">
+                        <th>
+                            Name
+                        </th>
+                        <th>
+                            Rating
+                        </th>
+                        <th>
+                            Feedback
+                        </th>
+                        <th>
+                            Date
+                        </th>
+                    </thead>
+                    <tbody>
+                        <tr *ngFor="let item of filteredReviews">
+                            <td>{{item.name}}</td>
+                            <td>{{item.rating}}</td>
+                            <td>{{item.feedback}}</td>
+                            <td>{{item.date}}</td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </div>
+</section>
