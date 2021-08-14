@@ -30,8 +30,9 @@ import { WisdomComponent } from './wisdom/wisdom.component';
 
 
 const routes: Routes = [
-  {path : "form", component : FormComponent,},
-  {path : "" ,component : HomeComponent},
+  {path: '',pathMatch: 'full',redirectTo: 'home'},
+  {path : "form", component : FormComponent},
+  {path : "home" ,component : HomeComponent},
   {path : "team", component : TeamComponent},
   {path : "review", component : AllReviewsComponent},
   {path : "smiles", component : AllSmilesComponent},
@@ -62,7 +63,7 @@ const routes: Routes = [
 ];
 
 @NgModule({
-  imports: [RouterModule.forRoot(routes)],
+  imports: [RouterModule.forRoot(routes,{scrollPositionRestoration: 'enabled'})],
   exports: [RouterModule]
 })
 export class AppRoutingModule { }
