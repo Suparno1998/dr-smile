@@ -9,17 +9,18 @@
     height: 40px;
     min-width: 100%;
     background-color : #f66840 !important;
+    display: none;
 }
 .top-middle-bar{
     position: fixed;
-    top:40px;
+    top:0;
     left:0;
     height: 40px;
     min-width: 100%;
     background-color: #e3eeef !important;
 }
 .navbar-fixed-top{
-    margin-top: 80px;
+    margin-top: 40px;
 }
 .text-phone{
     font-size: 16px;
@@ -81,11 +82,34 @@
 .hv-und:hover{
     text-decoration: underline;
 }
+.pc-hide{
+    display: none !important;
+}
 @media screen and (max-width: 480px) {
     .small-button{
       visibility: visible;
     }
     .mobile-hide{
         display: none;
+    }
+    .top-bar{
+        position: fixed;
+        top:0;
+        left:0;
+        height: 40px;
+        min-width: 100%;
+        background-color : #f66840 !important;
+        display: block;
+    }
+    .top-middle-bar{
+        position: fixed;
+        top:40px;
+        left:0;
+        height: 40px;
+        min-width: 100%;
+        background-color: #e3eeef !important;
+    }
+    .navbar-fixed-top{
+        margin-top: 80px;
     }
 }

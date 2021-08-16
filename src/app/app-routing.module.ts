@@ -5,8 +5,10 @@ import { AllSmilesComponent } from './all-smiles/all-smiles.component';
 import { BreathComponent } from './breath/breath.component';
 import { BrushComponent } from './brush/brush.component';
 import { CancerComponent } from './cancer/cancer.component';
+import { CheckReviewsComponent } from './check-reviews/check-reviews.component';
 import { ChildrenComponent } from './children/children.component';
 import { CoffeeComponent } from './coffee/coffee.component';
+import { CookieComponent } from './cookie/cookie.component';
 import { CosmoComponent } from './cosmo/cosmo.component';
 import { CovidComponent } from './covid/covid.component';
 import { CrownComponent } from './crown/crown.component';
@@ -19,6 +21,7 @@ import { FluorideComponent } from './fluoride/fluoride.component';
 import { FormComponent } from './form/form.component';
 import { HomeComponent } from './home/home.component';
 import { ImplantComponent } from './implant/implant.component';
+import { LoginComponent } from './login/login.component';
 import { OrthoComponent } from './ortho/ortho.component';
 import { PeadoComponent } from './peado/peado.component';
 import { RctComponent } from './rct/rct.component';
@@ -31,9 +34,12 @@ import { WisdomComponent } from './wisdom/wisdom.component';
 
 const routes: Routes = [
   {path: '',pathMatch: 'full',redirectTo: 'home'},
+  {path : 'login',component : LoginComponent},
+  {path : 'check',component : CheckReviewsComponent},
   {path : "form", component : FormComponent},
   {path : "home" ,component : HomeComponent},
   {path : "team", component : TeamComponent},
+  {path : "privacy", component : CookieComponent},
   {path : "review", component : AllReviewsComponent},
   {path : "smiles", component : AllSmilesComponent},
   //oral cavity components

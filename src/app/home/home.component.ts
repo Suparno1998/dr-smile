@@ -44,6 +44,10 @@ export class HomeComponent implements OnInit {
     this.divisor.style.width = this.slider.value+"%";
   }
   openFormModal(){
+    this.rating = 0
+    this.name = ""
+    this.feedback = ""
+    this.date = null
     $('#feedbackformmodal').modal('show')
   }
   closeFormModal(){
@@ -125,13 +129,15 @@ export class HomeComponent implements OnInit {
         showCloseButton : true,
         showCancelButton : true,
       })
+      this.closeFormModal()
     }
     else{
       var obj = {
         name : this.name === "" ? "Anonymous" : this.name,
         date : this.date === null ? "NA" : this.date,
         feedback : this.feedback == "" ? "NA" : this.feedback,
-        rating : this.rating
+        rating : this.rating,
+        activeFlag : null
       }
       this.service.submitFeedback(obj).then(v => {
         console.log(v.id)
@@ -143,7 +149,7 @@ export class HomeComponent implements OnInit {
             showConfirmButton : false,
             showCloseButton : true,
             icon : "success",
-            showCancelButton : true,
+            showCancelButton : false,
           })
         }
         else{
@@ -153,10 +159,11 @@ export class HomeComponent implements OnInit {
             showConfirmButton : false,
             showCloseButton : true,
             icon : "error",
-            showCancelButton : true,
+            showCancelButton : false,
           })
         }
       })
+      this.closeFormModal()
     }
   }
 }

@@ -17,7 +17,8 @@ export class AllReviewsComponent implements OnInit {
   constructor(private service : DataService) { }
 
   async ngOnInit(){
-      this.reviews = await this.service.getFeedback()
+      var temp = await this.service.getFeedback()
+      this.reviews = temp.filter(v => v.activeFlag == true)
       this.filteredReviews = this.reviews
       console.log(this.reviews)
   }
@@ -27,9 +28,11 @@ export class AllReviewsComponent implements OnInit {
   }
   onChange(){
     this.filteredReviews = this.reviews.filter(v => {
-      if(this.filter.rating !== "" && parseInt(this.filter.rating) !== v.rating)
-        return false
-      return true
+      if(this.filter.rating === "")
+        return true
+      if(this.filter.rating !== "" && parseInt(this.filter.rating) <= v.rating)
+        return true
+      return false
     })
     if(this.filter.name === "a")
       this.filteredReviews = this.filteredReviews.filter(v => v.name === "Anonymous")

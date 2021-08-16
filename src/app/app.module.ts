@@ -2,6 +2,7 @@ import { BrowserModule } from '@angular/platform-browser';
 import { NgModule,CUSTOM_ELEMENTS_SCHEMA, enableProdMode } from '@angular/core';
 import { HttpClientModule } from '@angular/common/http';
 import { FormsModule } from '@angular/forms';
+import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 
 import { AppRoutingModule } from './app-routing.module';
 import { AppComponent } from './app.component';
@@ -33,9 +34,11 @@ import { CosmoComponent } from './cosmo/cosmo.component';
 import { PeadoComponent } from './peado/peado.component';
 import { TeamComponent } from './team/team.component';
 import { OralComponent } from './oral/oral.component';
-import { NgbModule } from '@ng-bootstrap/ng-bootstrap';
 import { AllReviewsComponent } from './all-reviews/all-reviews.component';
 import { AllSmilesComponent } from './all-smiles/all-smiles.component';
+import { CookieComponent } from './cookie/cookie.component';
+import { LoginComponent } from './login/login.component';
+import { CheckReviewsComponent } from './check-reviews/check-reviews.component';
 
 @NgModule({
   declarations: [
@@ -70,6 +73,9 @@ import { AllSmilesComponent } from './all-smiles/all-smiles.component';
     OralComponent,
     AllReviewsComponent,
     AllSmilesComponent,
+    CookieComponent,
+    LoginComponent,
+    CheckReviewsComponent,
   ],
   imports: [
     BrowserModule,

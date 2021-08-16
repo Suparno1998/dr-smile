@@ -10,7 +10,10 @@
             <div class="col-auto my-1">
                 <select name="selct-rating" id="select-rating" class="form-control" [(ngModel)]="filter.rating" (change)="onChange()">
                     <option value="" selected>Select Rating</option>
-                    <option [value]="i+1" *ngFor="let item of [].constructor(10);let i = index">{{i+1}}</option>
+                    <option value="4">4 stars and up</option>
+                    <option value="3">3 stars and up</option>
+                    <option value="2">2 stars and up</option>
+                    <option value="1">1 star and up</option>
                 </select>
             </div>
             <div class="col-auto my-1">

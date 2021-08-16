@@ -1,12 +1,17 @@
-import { Component} from '@angular/core';
+import { Component, OnInit} from '@angular/core';
+import { Router } from '@angular/router';
+import { DataService } from './data.service';
 declare var $ : any;
 @Component({
   selector: 'app-root',
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
+export class AppComponent implements OnInit{
   title = 'dr-smile';
+  user : any = null
+  constructor(private service : DataService,private router : Router){
+  }
   openMember(){
     $('#appmembershipModal').modal('show')
   }
@@ -30,5 +35,14 @@ export class AppComponent {
   }
   openMemberForm(){
     window.location.href="https://form.jotform.com/212216404476046"
+  }
+  ngOnInit(){
+    this.service.userSubject.subscribe(v => {
+      this.user = v
+    })
+  }
+  logout(){
+    this.service.userSubject.next(null)
+    this.router.navigateByUrl('/home')
   }
 }

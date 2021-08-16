@@ -53,9 +53,22 @@
                         </div>
                     </li>
                     <li class="nav-item"><a class="nav-link link text-grey caps display-4" routerLink="/" fragment="form2-g">Contact Us</a></li>
+                    <li class="nav-item">
+                        <a class="nav-link link text-grey caps display-4" data-toggle="modal" data-target="#feedbackformmodal">Feedback</a>
+                    </li>
+                    <li class="nav-item" *ngIf="user === null">
+                        <a class="nav-link link text-grey caps display-4" routerLink="/login">Login</a>
+                    </li>
+                    <li class="nav-item" *ngIf="user !== null">
+                        <a class="nav-link link text-grey caps display-4">Welcome Admin</a>
+                    </li>
+                    <li class="nav-item" *ngIf="user !== null">
+                        <a class="nav-link link text-grey caps display-4" (click)="logout()">Logout</a>
+                    </li>
                     <li class="nav-item mb-2">
                         <a class="btn btn-small display-4 mr-0" href="https://form.jotform.com/212194400583046">Request Appointment</a>
                     </li>
+                    
                 </ul>
             </div>
         </div>
@@ -112,7 +125,7 @@
                         <a class="text-white small" routerLink = "/" fragment="service-top">Services</a>
                     </li>
                     <li class="mbr-text item-wrap">
-                        <a class="text-white small" routerLink = "/" fragment="smile-transformation">Smile Transformation Gallery</a>
+                        <a class="text-white small" routerLink = "/smiles" fragment="top">Smile Transformation Gallery</a>
                     </li>
                     <li class="mbr-text item-wrap">
                         <a class="text-white small" routerLink = "/" fragment="features">Patient Stories and Testimonials</a>
@@ -183,10 +196,11 @@
     </div>
 </section>
 <!-- Footer End-->
-<!--Cookie Data and Scroll to top-->
-<!--input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#000000' data-cookie-colorBg='rgba(182, 242, 251, 0.62)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#000000' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a href='privacy.html'>cookie policy</a>.">
+<!--Cookie Data and Scroll to top end-->
+<input name="cookieData" type="hidden" data-cookie-customDialogSelector='null' data-cookie-colorText='#000000' data-cookie-colorBg='rgba(182, 242, 251, 0.62)' data-cookie-textButton='Agree' data-cookie-colorButton='' data-cookie-colorLink='#000000' data-cookie-underlineLink='true' data-cookie-text="We use cookies to give you the best experience. Read our <a routerLink='/privacy' fragment='top'>cookie policy</a>.">
 <div id="scrollToTop" class="scrollToTop mbr-arrow-up"><a style="text-align: center;"><i class="mbr-arrow-up-icon mbr-arrow-up-icon-cm cm-icon cm-icon-smallarrow-up"></i></a></div>
-<input name="animation" type="hidden"-->
+<input name="animation" type="hidden">
+<!--Cookie Data and Scroll to top end-->
 <!--Membership modal start-->
 <div class="modal fade" id="appmembershipModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog">

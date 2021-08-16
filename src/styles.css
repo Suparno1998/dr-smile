@@ -2,6 +2,7 @@
 @import url('https://fonts.googleapis.com/css2?family=Lora:ital,wght@0,400;0,500;0,600;0,700;1,400;1,500;1,600;1,700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Courgette&family=Merienda:wght@700&family=Rye&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Georama&display=swap');
 html,body {
     margin: 0px !important;
@@ -13,7 +14,7 @@ html,body {
     margin-bottom: 0px;
  }
 #content6-1{
-   margin-top: 120px !important;
+   margin-top: 80px !important;
 }
 .deep-orange{
    color : #f66840 !important;
@@ -56,6 +57,13 @@ html,body {
 .btn-color:hover{
    color : rgba(0,0,0,0.3);
    font-size : 4rem;
+}
+
+#rating span:first-of-type{
+   margin-left:0px;
+}
+#rating span{
+   margin-left:10px;
 }
 @media only screen and (max-width: 480px){
    #content6-1{

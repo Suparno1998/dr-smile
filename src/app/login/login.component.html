@@ -1,0 +1,32 @@
+<section class="content">
+    <div class="row d-flex justify-content-center">
+        <div class="col-10 col-md-6 col-lg-4 p-2 login-container">
+            <div class="row d-flex justify-content-center mb-2">
+                <div class="col-auto text-dark">
+                    <h3>Login</h3>
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mb-2">
+                <div class="col-11 col-md-11 col-lg-11">
+                    <input type="text" name="username" id="username" class="form-control" placeholder="Enter Username" [(ngModel)]="username" (ngModelChange)="removeError()">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mb-2">
+                <div class="col-11 col-md-11 col-lg-11">
+                    <input type="password" name="password" id="password" class="form-control" placeholder="Enter Password"  [(ngModel)]="password" (ngModelChange)="removeError()">
+                </div>
+            </div>
+            <div class="row d-flex justify-content-center mb-2">
+                <div class="col-auto col-md-auto col-lg-auto p-2 error-info" *ngIf="errorFlag">
+                    {{errorMsg}}
+                </div>
+            </div>
+            
+            <div class="row d-flex justify-content-center mb-2">
+                <div class="col-auto col-md-auto col-lg-auto">
+                    <button class="btn btn-outline-primary" (click)="login()">Login</button>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>
