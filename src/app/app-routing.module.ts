@@ -33,7 +33,9 @@ import { WisdomComponent } from './wisdom/wisdom.component';
 
 
 const routes: Routes = [
-  {path: '',pathMatch: 'full',redirectTo: 'home'},
+  {path: '',pathMatch: 'full',redirectTo: '/home'},
+  {path : 'robots',redirectTo : 'robots.txt'},
+  {path : 'sitemap',redirectTo : 'sitemap.xml'},
   {path : 'login',component : LoginComponent},
   {path : 'check',component : CheckReviewsComponent},
   {path : "form", component : FormComponent},

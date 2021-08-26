@@ -1057,13 +1057,17 @@ a {
   }
 }
 .cid-sCaOXoQw4E .mbr-section-title {
-  color: #00509d;
+  color: #ffffff;
   font-weight: bolder;
 }
 .cid-sCaOXoQw4E .mbr-section-subtitle {
-  color: #00509d;
+  color: #ffffff;
   font-weight: bolder;
 }
+.dark{
+  color : rgba(0,0,0,0.82) !important;
+}
+
 .cid-sDqHlAVQ14 {
   padding-top: 3rem;
   padding-bottom: 3rem;
